@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'nytimes-three20-demo' target in the 'nytimes-three20-demo' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+  #import <UIKit/UIKit.h>
+  #import "Three20/Three20.h"
+#endif
