@@ -1,5 +1,19 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* AppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 718}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 530}";
+		};
+	};
+	1D3623250D0F684500981E51 /* AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 670}}";
+			sepNavSelRange = "{835, 0}";
+			sepNavVisRange = "{0, 1641}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* nytimes-three20-demo */ = {
 		activeExec = 0;
 		executables = (
@@ -10,6 +24,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 9CB79EDB1172561700CFFCB2 /* nytimes-three20-demo */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* nytimes-three20-demo */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* nytimes-three20-demo */,
+		);
 		codeSenseManager = 9CB79EFA1172561F00CFFCB2 /* Code sense */;
 		executables = (
 			9CB79EDB1172561700CFFCB2 /* nytimes-three20-demo */,
@@ -44,6 +61,13 @@
 		userBuildSettings = {
 		};
 	};
+	32CA4F630368D1EE00C91783 /* nytimes_three20_demo_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 718}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 235}";
+		};
+	};
 	9CB79EDB1172561700CFFCB2 /* nytimes-three20-demo */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -60,6 +84,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -84,5 +109,34 @@
 	9CB79EFA1172561F00CFFCB2 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	9CB79F27117258A900CFFCB2 /* MovieListingViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
+			sepNavSelRange = "{247, 0}";
+			sepNavVisRange = "{0, 254}";
+		};
+	};
+	9CB79F28117258A900CFFCB2 /* MovieListingViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(NSString *)subtitle\";\n            r = \"{602, 24}\";\n            s = 1;\n        },\n                {\n            l = \"(NSString *)imageURL\";\n            r = \"{636, 24}\";\n            s = 1;\n        },\n                {\n            l = \"(UIImage *)defaultImage\";\n            r = \"{674, 27}\";\n            s = 1;\n        },\n                {\n            l = \"(NSString *)URL\";\n            r = \"{706, 19}\";\n            s = 1;\n        },\n                {\n            l = \"(NSString *)accessoryURL\";\n            r = \"{739, 28}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4921}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1774, 2392}}";
+			sepNavSelRange = "{655, 0}";
+			sepNavVisRange = "{0, 1377}";
+		};
+	};
+	9CB79F2C1172590300CFFCB2 /* MovieListingDataSource.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
+			sepNavSelRange = "{242, 0}";
+			sepNavVisRange = "{0, 250}";
+		};
+	};
+	9CB79F2D1172590300CFFCB2 /* MovieListingDataSource.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
+			sepNavSelRange = "{186, 0}";
+			sepNavVisRange = "{0, 232}";
+		};
 	};
 }

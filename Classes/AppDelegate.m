@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MovieListingViewController.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -23,9 +23,10 @@
   TTURLMap* map = navigator.URLMap;
 
   [map from:@"*" toViewController:[TTWebController class]];
-
+  [map from:@"tt://movieListing" toViewController:[MovieListingViewController class]];
+	
   if (![navigator restoreViewControllers]) {
-    [navigator openURLAction:[TTURLAction actionWithURLPath:@"http://three20.info"]];
+    [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://movieListing"]];
   }
 }
 
