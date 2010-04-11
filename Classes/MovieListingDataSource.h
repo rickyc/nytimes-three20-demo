@@ -6,10 +6,10 @@
 //  Copyright 2010 Family. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@class MovieListingModel;
 
 @interface MovieListingDataSource : TTListDataSource {
-
+	MovieListingModel *_movieListingModel;
 }
 
 @end

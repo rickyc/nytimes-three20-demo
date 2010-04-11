@@ -21,6 +21,8 @@
 		9CB79F7211725C1C00CFFCB2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6B11725C1C00CFFCB2 /* SBJsonParser.m */; };
 		9CB79F7311725C1C00CFFCB2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6D11725C1C00CFFCB2 /* SBJsonWriter.m */; };
 		9CB7A01B1172666700CFFCB2 /* MovieListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */; };
+		9CB7A109117271D600CFFCB2 /* TTMovieListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A108117271D600CFFCB2 /* TTMovieListing.m */; };
+		9CB7A126117279E000CFFCB2 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7A125117279E000CFFCB2 /* placeholder.png */; };
 		EB383B6110BBF6200000B2D2 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383B5F10BBF6180000B2D2 /* libThree20.a */; };
 		EB383B6510BBF62B0000B2D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */; };
 		EB383B6D10BBF6360000B2D2 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB383B6C10BBF6360000B2D2 /* Three20.bundle */; };
@@ -79,6 +81,9 @@
 		9CB79F6D11725C1C00CFFCB2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = Frameworks/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
 		9CB7A0191172666700CFFCB2 /* MovieListingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListingModel.h; sourceTree = "<group>"; };
 		9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListingModel.m; sourceTree = "<group>"; };
+		9CB7A107117271D600CFFCB2 /* TTMovieListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListing.h; sourceTree = "<group>"; };
+		9CB7A108117271D600CFFCB2 /* TTMovieListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListing.m; sourceTree = "<group>"; };
+		9CB7A125117279E000CFFCB2 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = SOURCE_ROOT; };
 		EB383B5710BBF6180000B2D2 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EB383B6C10BBF6360000B2D2 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
@@ -111,6 +116,8 @@
 				9CB79F2D1172590300CFFCB2 /* MovieListingDataSource.m */,
 				9CB7A0191172666700CFFCB2 /* MovieListingModel.h */,
 				9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */,
+				9CB7A107117271D600CFFCB2 /* TTMovieListing.h */,
+				9CB7A108117271D600CFFCB2 /* TTMovieListing.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9CB7A125117279E000CFFCB2 /* placeholder.png */,
 				EB383B6C10BBF6360000B2D2 /* Three20.bundle */,
 				8D1107310486CEB800E47090 /* nytimes_three20_demo-Info.plist */,
 			);
@@ -271,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB383B6D10BBF6360000B2D2 /* Three20.bundle in Resources */,
+				9CB7A126117279E000CFFCB2 /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +301,7 @@
 				9CB79F7211725C1C00CFFCB2 /* SBJsonParser.m in Sources */,
 				9CB79F7311725C1C00CFFCB2 /* SBJsonWriter.m in Sources */,
 				9CB7A01B1172666700CFFCB2 /* MovieListingModel.m in Sources */,
+				9CB7A109117271D600CFFCB2 /* TTMovieListing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
