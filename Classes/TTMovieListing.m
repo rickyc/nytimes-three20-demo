@@ -13,7 +13,6 @@
 @synthesize title = _title;
 
 
-
 - (void) dealloc {
 	TT_RELEASE_SAFELY(_title);
 	[super dealloc];

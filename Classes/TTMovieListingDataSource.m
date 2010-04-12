@@ -1,20 +1,20 @@
 //
-//  MovieListingDataSource.m
+//  TTMovieListingDataSource.m
 //  nytimes-three20-demo
 //
 //  Created by Ricky Cheng on 4/11/10.
 //  Copyright 2010 Family. All rights reserved.
 //
 
-#import "MovieListingDataSource.h"
-#import "MovieListingModel.h"
+#import "TTMovieListingDataSource.h"
+#import "TTMovieListingModel.h"
 #import "JSON.h"
 
-@implementation MovieListingDataSource
+@implementation TTMovieListingDataSource
 
 - (id)init {
 	if (self = [super init]) {
-		_movieListingModel = [[MovieListingModel alloc] init];
+		_movieListingModel = [[TTMovieListingModel alloc] init];
 	}  
 	return self;
 }
@@ -34,9 +34,12 @@
 	for (NSDictionary* movieListing in _movieListingModel.movieListings) {
 		NSString *thumbnail = [[[movieListing objectForKey:@"multimedia"] objectForKey:@"resource"] objectForKey:@"src"];
 		NSString *url = [[movieListing objectForKey:@"link"] objectForKey:@"url"];
-		TTTableSubtitleItem *item = [TTTableSubtitleItem itemWithText:[movieListing objectForKey:@"display_title"] 
+		NSString *movieTitle = [movieListing objectForKey:@"display_title"];
+		
+		TTTableSubtitleItem *item = [TTTableSubtitleItem itemWithText:movieTitle
 										subtitle:[movieListing objectForKey:@"byline"] imageURL:thumbnail 
-											defaultImage:[UIImage imageNamed:@"placeholder.png"] URL:url accessoryURL:url];
+											defaultImage:[UIImage imageNamed:@"placeholder.png"] URL:url 
+												accessoryURL:[NSString stringWithFormat:@"tt://movieListing/%@",movieTitle]];
 		[items addObject:item];
 	}
 	

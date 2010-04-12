@@ -12,15 +12,17 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		9CB79F29117258A900CFFCB2 /* MovieListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F28117258A900CFFCB2 /* MovieListingViewController.m */; };
-		9CB79F2E1172590300CFFCB2 /* MovieListingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F2D1172590300CFFCB2 /* MovieListingDataSource.m */; };
+		9C79C01611728A1600DFCB78 /* TTMovieListingSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C79C01511728A1600DFCB78 /* TTMovieListingSearchModel.m */; };
+		9C79C03E11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C79C03D11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m */; };
+		9CB79F29117258A900CFFCB2 /* TTMovieListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F28117258A900CFFCB2 /* TTMovieListingViewController.m */; };
+		9CB79F2E1172590300CFFCB2 /* TTMovieListingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F2D1172590300CFFCB2 /* TTMovieListingDataSource.m */; };
 		9CB79F6E11725C1C00CFFCB2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6311725C1C00CFFCB2 /* NSObject+SBJSON.m */; };
 		9CB79F6F11725C1C00CFFCB2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6511725C1C00CFFCB2 /* NSString+SBJSON.m */; };
 		9CB79F7011725C1C00CFFCB2 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6711725C1C00CFFCB2 /* SBJSON.m */; };
 		9CB79F7111725C1C00CFFCB2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6911725C1C00CFFCB2 /* SBJsonBase.m */; };
 		9CB79F7211725C1C00CFFCB2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6B11725C1C00CFFCB2 /* SBJsonParser.m */; };
 		9CB79F7311725C1C00CFFCB2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6D11725C1C00CFFCB2 /* SBJsonWriter.m */; };
-		9CB7A01B1172666700CFFCB2 /* MovieListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */; };
+		9CB7A01B1172666700CFFCB2 /* TTMovieListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */; };
 		9CB7A109117271D600CFFCB2 /* TTMovieListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A108117271D600CFFCB2 /* TTMovieListing.m */; };
 		9CB7A126117279E000CFFCB2 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7A125117279E000CFFCB2 /* placeholder.png */; };
 		EB383B6110BBF6200000B2D2 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383B5F10BBF6180000B2D2 /* libThree20.a */; };
@@ -33,7 +35,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = EB383B5710BBF6180000B2D2 /* Three20.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C /* UnitTests.octest */;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = UnitTests;
 		};
 		EB383B5E10BBF6180000B2D2 /* PBXContainerItemProxy */ = {
@@ -62,10 +64,14 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* nytimes_three20_demo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nytimes_three20_demo_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* nytimes_three20_demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "nytimes_three20_demo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		9CB79F27117258A900CFFCB2 /* MovieListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListingViewController.h; sourceTree = "<group>"; };
-		9CB79F28117258A900CFFCB2 /* MovieListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListingViewController.m; sourceTree = "<group>"; };
-		9CB79F2C1172590300CFFCB2 /* MovieListingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListingDataSource.h; sourceTree = "<group>"; };
-		9CB79F2D1172590300CFFCB2 /* MovieListingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListingDataSource.m; sourceTree = "<group>"; };
+		9C79C01411728A1600DFCB78 /* TTMovieListingSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListingSearchModel.h; sourceTree = "<group>"; };
+		9C79C01511728A1600DFCB78 /* TTMovieListingSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListingSearchModel.m; sourceTree = "<group>"; };
+		9C79C03C11728C2E00DFCB78 /* TTMovieListingSearchDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListingSearchDataSource.h; sourceTree = "<group>"; };
+		9C79C03D11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListingSearchDataSource.m; sourceTree = "<group>"; };
+		9CB79F27117258A900CFFCB2 /* TTMovieListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListingViewController.h; sourceTree = "<group>"; };
+		9CB79F28117258A900CFFCB2 /* TTMovieListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListingViewController.m; sourceTree = "<group>"; };
+		9CB79F2C1172590300CFFCB2 /* TTMovieListingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListingDataSource.h; sourceTree = "<group>"; };
+		9CB79F2D1172590300CFFCB2 /* TTMovieListingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListingDataSource.m; sourceTree = "<group>"; };
 		9CB79F6111725C1C00CFFCB2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = Frameworks/JSON/JSON.h; sourceTree = SOURCE_ROOT; };
 		9CB79F6211725C1C00CFFCB2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "Frameworks/JSON/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
 		9CB79F6311725C1C00CFFCB2 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "Frameworks/JSON/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
@@ -79,10 +85,10 @@
 		9CB79F6B11725C1C00CFFCB2 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = Frameworks/JSON/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
 		9CB79F6C11725C1C00CFFCB2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = Frameworks/JSON/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
 		9CB79F6D11725C1C00CFFCB2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = Frameworks/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
-		9CB7A0191172666700CFFCB2 /* MovieListingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListingModel.h; sourceTree = "<group>"; };
-		9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListingModel.m; sourceTree = "<group>"; };
-		9CB7A107117271D600CFFCB2 /* TTMovieListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListing.h; sourceTree = "<group>"; };
-		9CB7A108117271D600CFFCB2 /* TTMovieListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListing.m; sourceTree = "<group>"; };
+		9CB7A0191172666700CFFCB2 /* TTMovieListingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListingModel.h; sourceTree = "<group>"; };
+		9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListingModel.m; sourceTree = "<group>"; };
+		9CB7A107117271D600CFFCB2 /* TTMovieListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMovieListing.h; path = Classes/TTMovieListing.h; sourceTree = "<group>"; };
+		9CB7A108117271D600CFFCB2 /* TTMovieListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMovieListing.m; path = Classes/TTMovieListing.m; sourceTree = "<group>"; };
 		9CB7A125117279E000CFFCB2 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = SOURCE_ROOT; };
 		EB383B5710BBF6180000B2D2 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -108,16 +114,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9C79C03A11728BDE00DFCB78 /* Listings */,
+				9C79C03B11728BF400DFCB78 /* Detailed */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
-				9CB79F27117258A900CFFCB2 /* MovieListingViewController.h */,
-				9CB79F28117258A900CFFCB2 /* MovieListingViewController.m */,
-				9CB79F2C1172590300CFFCB2 /* MovieListingDataSource.h */,
-				9CB79F2D1172590300CFFCB2 /* MovieListingDataSource.m */,
-				9CB7A0191172666700CFFCB2 /* MovieListingModel.h */,
-				9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */,
-				9CB7A107117271D600CFFCB2 /* TTMovieListing.h */,
-				9CB7A108117271D600CFFCB2 /* TTMovieListing.m */,
+				9CB79F27117258A900CFFCB2 /* TTMovieListingViewController.h */,
+				9CB79F28117258A900CFFCB2 /* TTMovieListingViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -146,6 +148,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9CB7A107117271D600CFFCB2 /* TTMovieListing.h */,
+				9CB7A108117271D600CFFCB2 /* TTMovieListing.m */,
 				32CA4F630368D1EE00C91783 /* nytimes_three20_demo_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -172,6 +176,28 @@
 				EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C79C03A11728BDE00DFCB78 /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				9CB79F2C1172590300CFFCB2 /* TTMovieListingDataSource.h */,
+				9CB79F2D1172590300CFFCB2 /* TTMovieListingDataSource.m */,
+				9CB7A0191172666700CFFCB2 /* TTMovieListingModel.h */,
+				9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */,
+			);
+			name = Listings;
+			sourceTree = "<group>";
+		};
+		9C79C03B11728BF400DFCB78 /* Detailed */ = {
+			isa = PBXGroup;
+			children = (
+				9C79C03C11728C2E00DFCB78 /* TTMovieListingSearchDataSource.h */,
+				9C79C03D11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m */,
+				9C79C01411728A1600DFCB78 /* TTMovieListingSearchModel.h */,
+				9C79C01511728A1600DFCB78 /* TTMovieListingSearchModel.m */,
+			);
+			name = Detailed;
 			sourceTree = "<group>";
 		};
 		9CB79F5F11725C1C00CFFCB2 /* Frameworks */ = {
@@ -292,16 +318,18 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
-				9CB79F29117258A900CFFCB2 /* MovieListingViewController.m in Sources */,
-				9CB79F2E1172590300CFFCB2 /* MovieListingDataSource.m in Sources */,
+				9CB79F29117258A900CFFCB2 /* TTMovieListingViewController.m in Sources */,
+				9CB79F2E1172590300CFFCB2 /* TTMovieListingDataSource.m in Sources */,
 				9CB79F6E11725C1C00CFFCB2 /* NSObject+SBJSON.m in Sources */,
 				9CB79F6F11725C1C00CFFCB2 /* NSString+SBJSON.m in Sources */,
 				9CB79F7011725C1C00CFFCB2 /* SBJSON.m in Sources */,
 				9CB79F7111725C1C00CFFCB2 /* SBJsonBase.m in Sources */,
 				9CB79F7211725C1C00CFFCB2 /* SBJsonParser.m in Sources */,
 				9CB79F7311725C1C00CFFCB2 /* SBJsonWriter.m in Sources */,
-				9CB7A01B1172666700CFFCB2 /* MovieListingModel.m in Sources */,
+				9CB7A01B1172666700CFFCB2 /* TTMovieListingModel.m in Sources */,
 				9CB7A109117271D600CFFCB2 /* TTMovieListing.m in Sources */,
+				9C79C01611728A1600DFCB78 /* TTMovieListingSearchModel.m in Sources */,
+				9C79C03E11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

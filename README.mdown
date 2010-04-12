@@ -1,0 +1,12 @@
+Demo Application
+===
+
+    http://developer.nytimes.com/docs/movie_reviews_api
+    http://api.nytimes.com/svc/movies/v2/reviews/dvd-picks.json?order=by-date&api-key=5ae48abecf651fa6ea534753c869125a:11:60300054
+
+    http://three20.info/
+    http://revetkn.com/
+    http://code.google.com/p/json-framework/
+    http://github.com/klazuka/
+    http://github.com/facebook/three20
+

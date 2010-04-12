@@ -6,10 +6,10 @@
 //  Copyright 2010 Family. All rights reserved.
 //
 
-@class MovieListingModel;
+@class TTMovieListingModel;
 
-@interface MovieListingDataSource : TTListDataSource {
-	MovieListingModel *_movieListingModel;
+@interface TTMovieListingDataSource : TTListDataSource {
+	TTMovieListingModel *_movieListingModel;
 }
 
 @end

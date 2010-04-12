@@ -2,16 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* AppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 718}}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 530}";
 		};
 	};
 	1D3623250D0F684500981E51 /* AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 670}}";
-			sepNavSelRange = "{835, 0}";
-			sepNavVisRange = "{0, 1641}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 637}}";
+			sepNavSelRange = "{1182, 0}";
+			sepNavVisRange = "{159, 1597}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* nytimes-three20-demo */ = {
@@ -37,9 +37,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					653,
+					792,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -54,19 +54,237 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 292705815;
-			PBXWorkspaceStateSaveDate = 292705815;
+			PBXPerProjectTemplateStateSaveDate = 292740106;
+			PBXWorkspaceStateSaveDate = 292740106;
+		};
+		perUserProjectItems = {
+			9C8BBACD1172DC4500036FAE /* PBXTextBookmark */ = 9C8BBACD1172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBACE1172DC4500036FAE /* PBXTextBookmark */ = 9C8BBACE1172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBACF1172DC4500036FAE /* PBXTextBookmark */ = 9C8BBACF1172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD01172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD01172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD11172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD11172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD21172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD21172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD31172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD31172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD41172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD41172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD51172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD51172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD61172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD61172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD71172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD71172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD81172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD81172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBAD91172DC4500036FAE /* PBXTextBookmark */ = 9C8BBAD91172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBADA1172DC4500036FAE /* PBXTextBookmark */ = 9C8BBADA1172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBADB1172DC4500036FAE /* PBXTextBookmark */ = 9C8BBADB1172DC4500036FAE /* PBXTextBookmark */;
+			9C8BBADC1172DC4500036FAE /* PBXBookmark */ = 9C8BBADC1172DC4500036FAE /* PBXBookmark */;
+			9C8BBADD1172DC4500036FAE /* PBXTextBookmark */ = 9C8BBADD1172DC4500036FAE /* PBXTextBookmark */;
 		};
 		sourceControlManager = 9CB79EF91172561F00CFFCB2 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{100, 0}";
+			sepNavVisRange = "{0, 335}";
+		};
+	};
 	32CA4F630368D1EE00C91783 /* nytimes_three20_demo_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 718}}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 235}";
 		};
+	};
+	9C79C01411728A1600DFCB78 /* TTMovieListingSearchModel.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{381, 0}";
+			sepNavVisRange = "{0, 436}";
+		};
+	};
+	9C79C01511728A1600DFCB78 /* TTMovieListingSearchModel.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 780}}";
+			sepNavSelRange = "{313, 0}";
+			sepNavVisRange = "{480, 1179}";
+		};
+	};
+	9C79C03C11728C2E00DFCB78 /* TTMovieListingSearchDataSource.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{169, 0}";
+			sepNavVisRange = "{0, 372}";
+		};
+	};
+	9C79C03D11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 1742}}";
+			sepNavSelRange = "{463, 0}";
+			sepNavVisRange = "{2776, 1151}";
+		};
+	};
+	9C8BBACD1172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB79F2C1172590300CFFCB2 /* TTMovieListingDataSource.h */;
+		name = "TTMovieListingDataSource.h: 8";
+		rLen = 0;
+		rLoc = 150;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	9C8BBACE1172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB79F2D1172590300CFFCB2 /* TTMovieListingDataSource.m */;
+		name = "TTMovieListingDataSource.m: 42";
+		rLen = 0;
+		rLoc = 1294;
+		rType = 0;
+		vrLen = 1203;
+		vrLoc = 190;
+	};
+	9C8BBACF1172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB7A0191172666700CFFCB2 /* TTMovieListingModel.h */;
+		name = "TTMovieListingModel.h: 2";
+		rLen = 0;
+		rLoc = 9;
+		rType = 0;
+		vrLen = 302;
+		vrLoc = 0;
+	};
+	9C8BBAD01172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */;
+		name = "TTMovieListingModel.m: 39";
+		rLen = 0;
+		rLoc = 1074;
+		rType = 0;
+		vrLen = 1189;
+		vrLoc = 327;
+	};
+	9C8BBAD11172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9C79C03C11728C2E00DFCB78 /* TTMovieListingSearchDataSource.h */;
+		name = "TTMovieListingSearchDataSource.h: 8";
+		rLen = 0;
+		rLoc = 169;
+		rType = 0;
+		vrLen = 372;
+		vrLoc = 0;
+	};
+	9C8BBAD21172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9C79C03D11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m */;
+		name = "TTMovieListingSearchDataSource.m: 18";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 1151;
+		vrLoc = 2776;
+	};
+	9C8BBAD31172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9C79C01411728A1600DFCB78 /* TTMovieListingSearchModel.h */;
+		name = "TTMovieListingSearchModel.h: 16";
+		rLen = 0;
+		rLoc = 381;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	9C8BBAD41172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9C79C01511728A1600DFCB78 /* TTMovieListingSearchModel.m */;
+		name = "TTMovieListingSearchModel.m: 13";
+		rLen = 0;
+		rLoc = 313;
+		rType = 0;
+		vrLen = 1179;
+		vrLoc = 480;
+	};
+	9C8BBAD51172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* AppDelegate.h */;
+		name = "AppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 530;
+		vrLoc = 0;
+	};
+	9C8BBAD61172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* AppDelegate.m */;
+		name = "AppDelegate.m: 29";
+		rLen = 0;
+		rLoc = 1182;
+		rType = 0;
+		vrLen = 1597;
+		vrLoc = 159;
+	};
+	9C8BBAD71172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB79F27117258A900CFFCB2 /* TTMovieListingViewController.h */;
+		name = "TTMovieListingViewController.h: 16";
+		rLen = 0;
+		rLoc = 324;
+		rType = 0;
+		vrLen = 332;
+		vrLoc = 0;
+	};
+	9C8BBAD81172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB79F28117258A900CFFCB2 /* TTMovieListingViewController.m */;
+		name = "TTMovieListingViewController.m: 30";
+		rLen = 0;
+		rLoc = 682;
+		rType = 0;
+		vrLen = 857;
+		vrLoc = 105;
+	};
+	9C8BBAD91172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB7A107117271D600CFFCB2 /* TTMovieListing.h */;
+		name = "TTMovieListing.h: 14";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	9C8BBADA1172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9CB7A108117271D600CFFCB2 /* TTMovieListing.m */;
+		name = "TTMovieListing.m: 15";
+		rLen = 0;
+		rLoc = 230;
+		rType = 0;
+		vrLen = 304;
+		vrLoc = 0;
+	};
+	9C8BBADB1172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* nytimes_three20_demo_Prefix.pch */;
+		name = "nytimes_three20_demo_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	9C8BBADC1172DC4500036FAE /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+	};
+	9C8BBADD1172DC4500036FAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 6";
+		rLen = 0;
+		rLoc = 100;
+		rType = 0;
+		vrLen = 335;
+		vrLoc = 0;
 	};
 	9CB79EDB1172561700CFFCB2 /* nytimes-three20-demo */ = {
 		isa = PBXExecutable;
@@ -92,6 +310,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = "nytimes-three20-demo";
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -110,60 +330,60 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	9CB79F27117258A900CFFCB2 /* MovieListingViewController.h */ = {
+	9CB79F27117258A900CFFCB2 /* TTMovieListingViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
-			sepNavSelRange = "{246, 0}";
-			sepNavVisRange = "{0, 254}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{324, 0}";
+			sepNavVisRange = "{0, 332}";
 		};
 	};
-	9CB79F28117258A900CFFCB2 /* MovieListingViewController.m */ = {
+	9CB79F28117258A900CFFCB2 /* TTMovieListingViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
-			sepNavSelRange = "{434, 0}";
-			sepNavVisRange = "{0, 584}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 611}}";
+			sepNavSelRange = "{682, 0}";
+			sepNavVisRange = "{105, 857}";
 		};
 	};
-	9CB79F2C1172590300CFFCB2 /* MovieListingDataSource.h */ = {
+	9CB79F2C1172590300CFFCB2 /* TTMovieListingDataSource.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
-			sepNavSelRange = "{177, 0}";
-			sepNavVisRange = "{0, 281}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{150, 0}";
+			sepNavVisRange = "{0, 287}";
 		};
 	};
-	9CB79F2D1172590300CFFCB2 /* MovieListingDataSource.m */ = {
+	9CB79F2D1172590300CFFCB2 /* TTMovieListingDataSource.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
-			sepNavSelRange = "{692, 0}";
-			sepNavVisRange = "{0, 1290}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 663}}";
+			sepNavSelRange = "{1294, 0}";
+			sepNavVisRange = "{190, 1203}";
 		};
 	};
-	9CB7A0191172666700CFFCB2 /* MovieListingModel.h */ = {
+	9CB7A0191172666700CFFCB2 /* TTMovieListingModel.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
-			sepNavSelRange = "{233, 0}";
-			sepNavVisRange = "{0, 298}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{9, 0}";
+			sepNavVisRange = "{0, 302}";
 		};
 	};
-	9CB7A01A1172666700CFFCB2 /* MovieListingModel.m */ = {
+	9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 1157}}";
-			sepNavSelRange = "{1453, 0}";
-			sepNavVisRange = "{554, 2091}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 728}}";
+			sepNavSelRange = "{1074, 0}";
+			sepNavVisRange = "{327, 1189}";
 		};
 	};
 	9CB7A107117271D600CFFCB2 /* TTMovieListing.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
 			sepNavSelRange = "{236, 0}";
 			sepNavVisRange = "{0, 289}";
 		};
 	};
 	9CB7A108117271D600CFFCB2 /* TTMovieListing.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 693}}";
-			sepNavSelRange = "{188, 0}";
-			sepNavVisRange = "{0, 305}";
+			sepNavIntBoundsRect = "{{0, 0}, {970, 537}}";
+			sepNavSelRange = "{230, 0}";
+			sepNavVisRange = "{0, 304}";
 		};
 	};
 }
