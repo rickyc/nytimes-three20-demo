@@ -44,10 +44,10 @@ static NSString* kNYTimesMovieFeed = @"http://api.nytimes.com/svc/movies/v2/revi
 	
 	NSString *responseBody = [[NSString alloc]
 							  initWithData:response.data encoding:NSUTF8StringEncoding]; 
-//	NSLog(@"response body => %@", responseBody);	
+	TTDINFO(@"response body => %@", responseBody);	
 	_movieListings = [[responseBody JSONValue] objectForKey:@"results"];
 	
-	NSLog(@"movie listings => %@", _movieListings);
+	TTDINFO(@"movie listings => %@", _movieListings);
 	
 	[super requestDidFinishLoad:request];
 }

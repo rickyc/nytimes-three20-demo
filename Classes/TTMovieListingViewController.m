@@ -17,6 +17,7 @@
     if (self = [super init]) {
         self.title = @"Movie Listings";
 		self.movieTitle = nil;
+		self.variableHeightRows = YES;
 	}
 	
     return self;

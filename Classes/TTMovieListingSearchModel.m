@@ -17,7 +17,7 @@ static NSString* kSearchFeed = @"http://api.nytimes.com/svc/movies/v2/reviews/se
 
 - (id)initWithMovieTitle:(NSString*)movieTitle {
 	if (self = [self init]) {
-		 self.movieTitle = movieTitle;
+		self.movieTitle = movieTitle;
 	}
 	return self;
 }

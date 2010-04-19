@@ -34,90 +34,77 @@
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSMutableArray* sections = [[NSMutableArray alloc] init];
 	NSMutableArray* items = [[NSMutableArray alloc] init];
-	
+
 	{
-		// This section has no title.
 		[sections addObject:@""];
 		
 		NSMutableArray* itemRows = [[NSMutableArray alloc] init];
 		
-		NSString* headline = [_searchModel.movieData objectForKey:@"headline"];
 		NSString* byline = [_searchModel.movieData objectForKey:@"byline"];
 		NSString* title = [_searchModel.movieData objectForKey:@"display_title"];
-//		NSString* blog = [_usermodel.properties objectForKey:@"blog"];
-//		NSString* location = [_usermodel.properties objectForKey:@"location"];
-		NSDate* dateUpdated = [_searchModel.movieData objectForKey:@"date_updated"];
 		
-		if( TTIsStringWithAnyText(title) ) {
-			[itemRows addObject:[TTTableCaptionItem itemWithText:title
-														 caption:@"Display Title"]];
-		}
+		NSDictionary *imageResource = [[_searchModel.movieData objectForKey:@"multimedia"] objectForKey:@"resource"];
+		NSString *imageURL = [imageResource objectForKey:@"src"];
 
-		if( TTIsStringWithAnyText(byline) ) {
-			[itemRows addObject:[TTTableCaptionItem itemWithText:byline
-														 caption:@"Byline"]];
-		}
-		
-		/*
-		if( TTIsStringWithAnyText(email) ) {
-			NSData* emailData = [email dataUsingEncoding:NSUTF8StringEncoding];
-			
-			NSString* imageUrl = [@"http://www.gravatar.com/avatar/"
-								  stringByAppendingString:[emailData md5Hash]];
-			
+		if( TTIsStringWithAnyText(imageURL) ) {
 			TTStyle* style =
 			[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
-			 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
-										  width:1 next:
+			 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1] width:1 next:
 			  [TTInsetStyle styleWithInset:UIEdgeInsetsMake(2, 2, 2, 2) next:
 			   [TTContentStyle styleWithNext:
-				[TTImageStyle styleWithImageURL:nil
-								   defaultImage:nil
-									contentMode:UIViewContentModeScaleAspectFill
-										   size:CGSizeMake(50, 50) next:nil]]]]];
+				[TTImageStyle styleWithImageURL:nil defaultImage:nil
+						contentMode:UIViewContentModeScaleAspectFill
+							size:CGSizeMake(75, 75) next:nil]]]]];
 			
 			[itemRows addObject:[TTTableImageItem
-								 itemWithText: name
-								 imageURL: imageUrl
-								 defaultImage: TTIMAGE(@"bundle://gravatar-48.png")
+								 itemWithText: title
+								 imageURL: imageURL
+								 defaultImage: TTIMAGE(@"bundle://placeholder.png")
 								 imageStyle: style
 								 URL: nil]];
 		}
+
+		if (TTIsStringWithAnyText(title))
+			[itemRows addObject:[TTTableCaptionItem itemWithText:title caption:@"Display Title"]];
 		
-		if( TTIsStringWithAnyText(email) ) {
-			[itemRows addObject:[TTTableCaptionItem itemWithText:email
-														 caption:@"Email"]];
-		}
+		if (TTIsStringWithAnyText(byline))
+			[itemRows addObject:[TTTableCaptionItem itemWithText:byline caption:@"Byline"]];
 		
-		if( TTIsStringWithAnyText(blog) ) {
-			[itemRows addObject:[TTTableCaptionItem
-								 itemWithText: [[blog
-												 stringByReplacingOccurrencesOfString:@"http://"
-												 withString:@""]
-												stringByTrimmingCharactersInSet:[NSCharacterSet
-																				 characterSetWithCharactersInString:@"/"]]
-								 caption: @"Website/Blog"
-								 URL: blog]];
-		}
+		[items addObject:itemRows];
+		TT_RELEASE_SAFELY(itemRows);
+	}
+	
+	{
+		[sections addObject:@"Details"];
+	
+		NSString* dateUpdated = [_searchModel.movieData objectForKey:@"date_updated"];
+		NSString* headline = [_searchModel.movieData objectForKey:@"headline"];
+		NSString* summary = [_searchModel.movieData objectForKey:@"summary_short"];
 		
-		if( TTIsStringWithAnyText(company) ) {
-			[itemRows addObject:[TTTableCaptionItem itemWithText:company
-														 caption:@"Company"]];
-		}
+		NSDictionary *linkData = [_searchModel.movieData objectForKey:@"link"];
+		NSString *urlText = [linkData objectForKey:@"suggested_link_text"];
+		NSString *url = [linkData objectForKey:@"url"];
 		
-		if( TTIsStringWithAnyText(location) ) {
-			[itemRows addObject:[TTTableCaptionItem itemWithText:location
-														 caption:@"Location"]];
-		}*/
+		NSMutableArray* itemRows = [[NSMutableArray alloc] init];
+	
+		if (TTIsStringWithAnyText(headline))
+			[itemRows addObject:[TTTableSubtextItem itemWithText:@"Headline" caption:headline]];
 		
-		if( nil != dateUpdated ) {
+		if (TTIsStringWithAnyText(summary))
+			[itemRows addObject:[TTTableLongTextItem itemWithText:summary]];
+		
+		if (nil != dateUpdated) {
 			NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-			formatter.dateFormat = @"LLLL d, YYYY";
-			[itemRows addObject:[TTTableCaptionItem
-								 itemWithText: [formatter stringFromDate:dateUpdated]
-								 caption: @"Date Updated"]];
+			formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+			NSDate *date = [formatter dateFromString:dateUpdated];			
+			formatter.dateFormat = @"EEEE MMMM d, YYYY";
+			
+			[itemRows addObject:[TTTableCaptionItem itemWithText: [formatter stringFromDate:date] caption: @"Date Updated"]];
 			TT_RELEASE_SAFELY(formatter);
 		}
+		
+		if (TTIsStringWithAnyText(urlText))
+			[itemRows addObject:[TTTableLink itemWithText:urlText URL:url]];
 		
 		[items addObject:itemRows];
 		TT_RELEASE_SAFELY(itemRows);

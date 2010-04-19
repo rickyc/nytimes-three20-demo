@@ -35,11 +35,12 @@
 		NSString *thumbnail = [[[movieListing objectForKey:@"multimedia"] objectForKey:@"resource"] objectForKey:@"src"];
 		NSString *url = [[movieListing objectForKey:@"link"] objectForKey:@"url"];
 		NSString *movieTitle = [movieListing objectForKey:@"display_title"];
+		NSString *urlMovieTitle = [movieTitle stringByReplacingOccurrencesOfString:@" " withString:@"+"];
 		
 		TTTableSubtitleItem *item = [TTTableSubtitleItem itemWithText:movieTitle
 										subtitle:[movieListing objectForKey:@"byline"] imageURL:thumbnail 
 											defaultImage:[UIImage imageNamed:@"placeholder.png"] URL:url 
-												accessoryURL:[NSString stringWithFormat:@"tt://movieListing/%@",movieTitle]];
+												accessoryURL:[NSString stringWithFormat:@"tt://movieListing/%@",urlMovieTitle]];
 		[items addObject:item];
 	}
 	
