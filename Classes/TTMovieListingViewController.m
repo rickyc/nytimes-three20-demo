@@ -26,7 +26,7 @@
 - (id) initWithMovieTitle:(NSString*)movieTitle {
 	if (self = [self init]) {
 		self.movieTitle = movieTitle;
-		self.title = movieTitle;
+		self.title = [movieTitle stringByReplacingOccurrencesOfString:@"+" withString:@" "];
 		self.tableViewStyle = UITableViewStyleGrouped;
 	}
 	

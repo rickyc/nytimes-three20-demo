@@ -7,7 +7,6 @@
 //
 
 #import "TTMovieListingModel.h"
-#import "TTMovieListing.h"
 #import "JSON.h"
 
 static NSString* kNYTimesMovieFeed = @"http://api.nytimes.com/svc/movies/v2/reviews/dvd-picks.json";
@@ -44,10 +43,7 @@ static NSString* kNYTimesMovieFeed = @"http://api.nytimes.com/svc/movies/v2/revi
 	
 	NSString *responseBody = [[NSString alloc]
 							  initWithData:response.data encoding:NSUTF8StringEncoding]; 
-	TTDINFO(@"response body => %@", responseBody);	
 	_movieListings = [[responseBody JSONValue] objectForKey:@"results"];
-	
-	TTDINFO(@"movie listings => %@", _movieListings);
 	
 	[super requestDidFinishLoad:request];
 }

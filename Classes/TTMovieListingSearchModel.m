@@ -48,10 +48,7 @@ static NSString* kSearchFeed = @"http://api.nytimes.com/svc/movies/v2/reviews/se
 	
 	NSString *responseBody = [[NSString alloc]
 							  initWithData:response.data encoding:NSUTF8StringEncoding]; 
-//	NSLog(@"response body => %@", responseBody);	
 	self.movieData = [[[responseBody JSONValue] objectForKey:@"results"] objectAtIndex:0];
-	
-	NSLog(@"movie search => %@", _movieData);
 	
 	[super requestDidFinishLoad:request];
 }

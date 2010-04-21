@@ -23,7 +23,6 @@
 		9CB79F7211725C1C00CFFCB2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6B11725C1C00CFFCB2 /* SBJsonParser.m */; };
 		9CB79F7311725C1C00CFFCB2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB79F6D11725C1C00CFFCB2 /* SBJsonWriter.m */; };
 		9CB7A01B1172666700CFFCB2 /* TTMovieListingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */; };
-		9CB7A109117271D600CFFCB2 /* TTMovieListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7A108117271D600CFFCB2 /* TTMovieListing.m */; };
 		9CB7A126117279E000CFFCB2 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7A125117279E000CFFCB2 /* placeholder.png */; };
 		EB383B6110BBF6200000B2D2 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383B5F10BBF6180000B2D2 /* libThree20.a */; };
 		EB383B6510BBF62B0000B2D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */; };
@@ -43,13 +42,6 @@
 			containerPortal = EB383B5710BBF6180000B2D2 /* Three20.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
-			remoteInfo = Three20;
-		};
-		EB383B6210BBF6280000B2D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB383B5710BBF6180000B2D2 /* Three20.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
 /* End PBXContainerItemProxy section */
@@ -87,8 +79,6 @@
 		9CB79F6D11725C1C00CFFCB2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = Frameworks/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
 		9CB7A0191172666700CFFCB2 /* TTMovieListingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMovieListingModel.h; sourceTree = "<group>"; };
 		9CB7A01A1172666700CFFCB2 /* TTMovieListingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMovieListingModel.m; sourceTree = "<group>"; };
-		9CB7A107117271D600CFFCB2 /* TTMovieListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMovieListing.h; path = Classes/TTMovieListing.h; sourceTree = "<group>"; };
-		9CB7A108117271D600CFFCB2 /* TTMovieListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMovieListing.m; path = Classes/TTMovieListing.m; sourceTree = "<group>"; };
 		9CB7A125117279E000CFFCB2 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = SOURCE_ROOT; };
 		EB383B5710BBF6180000B2D2 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -118,6 +108,7 @@
 				9C79C03B11728BF400DFCB78 /* Detailed */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				9C599E90117E311D002243A8 /* New Group */,
 				9CB79F27117258A900CFFCB2 /* TTMovieListingViewController.h */,
 				9CB79F28117258A900CFFCB2 /* TTMovieListingViewController.m */,
 			);
@@ -148,8 +139,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9CB7A107117271D600CFFCB2 /* TTMovieListing.h */,
-				9CB7A108117271D600CFFCB2 /* TTMovieListing.m */,
 				32CA4F630368D1EE00C91783 /* nytimes_three20_demo_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -176,6 +165,13 @@
 				EB383B6410BBF62B0000B2D2 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C599E90117E311D002243A8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		9C79C03A11728BDE00DFCB78 /* Listings */ = {
@@ -252,7 +248,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EB383B6310BBF6280000B2D2 /* PBXTargetDependency */,
 			);
 			name = "nytimes-three20-demo";
 			productName = "nytimes-three20-demo";
@@ -327,21 +322,12 @@
 				9CB79F7211725C1C00CFFCB2 /* SBJsonParser.m in Sources */,
 				9CB79F7311725C1C00CFFCB2 /* SBJsonWriter.m in Sources */,
 				9CB7A01B1172666700CFFCB2 /* TTMovieListingModel.m in Sources */,
-				9CB7A109117271D600CFFCB2 /* TTMovieListing.m in Sources */,
 				9C79C01611728A1600DFCB78 /* TTMovieListingSearchModel.m in Sources */,
 				9C79C03E11728C2E00DFCB78 /* TTMovieListingSearchDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EB383B6310BBF6280000B2D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Three20;
-			targetProxy = EB383B6210BBF6280000B2D2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -356,6 +342,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				HEADER_SEARCH_PATHS = ../three20/src;
 				INFOPLIST_FILE = "nytimes_three20_demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/three20/src/build/Debug-iphonesimulator\"",
+				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -373,6 +363,10 @@
 				GCC_PREFIX_HEADER = nytimes_three20_demo_Prefix.pch;
 				HEADER_SEARCH_PATHS = ../three20/src;
 				INFOPLIST_FILE = "nytimes_three20_demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/three20/src/build/Debug-iphonesimulator\"",
+				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",

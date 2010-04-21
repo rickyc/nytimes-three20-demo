@@ -28,7 +28,6 @@
 	return _searchModel;
 }
 
-
 /// ----------------------
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {

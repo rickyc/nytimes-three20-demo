@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface TTMovieListingViewController : TTTableViewController {
 	NSString* _movieTitle;
 }
